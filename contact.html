@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="img/site.webmanifest">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color: #00BFFF;
+}
+
+.sty {
+  font-style: italic;
+  font-family: 'DM Serif Display', serif;
+  color: #000000;
+  font-size: 30px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1" class="sty">Name</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" required>
+      </div>
+<div class="form-group">
+  <label for="exampleFormControlInput1" class="sty">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
+</div>
+<div class="form-group">
+  <label for="exampleFormControlTextarea1" class="sty">Let's Talk about what you need</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+</div>
+</form>
+<button class="btn btn-success" id="submit">Submit</button>
+<script>
+    $('#submit').click(function() {
+      alert("Thank You! I have received your response!");
+  });
+</script>
+    </body>
+    </html>
